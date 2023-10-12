@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Lista não ordenada -->
+    <!-- Venda -->
+    <ul>
+        <li>Leite</li>
+        <li>Queijo</li>
+        <li>Tomate</li>
+        <li>Sabonete</li>
+    </ul>
+
+    <!-- atributo start  -->
+    <ol start="1">
+        <li>Leite</li>
+        <li>Queijo</li>
+        <li>Tomate</li>
+        <li>Sabonete</li>
+    </ol>
+
+    <!-- atributo type  -->
+    <!-- TODO: ver depois list-style-type: none; -->
+    <ol type="i">
+        <li>Frutas</li>
+        <li>Leite (Derivados)</li>
+    </ol>
+
+    <!-- lista aninhada -->
+    <ul>
+        <li>Frutas
+            <ol type="a">
+                <li>Tomate</li>
+                <li>Melancia</li>
+                <li>Laranja</li>
+                <li>...</li>
+            </ol>
+        </li>
+        <li>Leite (Derivados)
+            <ol>
+                <li>Queijo</li>
+                <li>Requeijão</li>
+                <li>Iogurte</li>
+            </ol>
+        </li>
+    </ul>
+
+    <!-- lista aninhada (mais complexa) -->
+    <ul>
+        <li>Leite (Derivados)
+            <ol>
+                <li>Queijo
+                    <ol>
+                        <li>Parmesão</li>
+                        <li>Brie</li>
+                        <li>Mussarela</li>
+                        <li>Ricota</li>
+                        <li>...</li>
+                    </ol>
+                </li>
+                <li>Requeijão</li>
+                <li>Iogurte</li>
+            </ol>
+        </li>
+    </ul>
+
+    <!-- Não é legal =( -->
+    <!-- <div>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </div> -->
+</body>
+</html>

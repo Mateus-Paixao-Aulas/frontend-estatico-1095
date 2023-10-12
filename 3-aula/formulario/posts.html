@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postar</title>
+</head>
+<body>
+    <form method="post" action="https://6526abec917d673fd76cc3a6.mockapi.io/api/v1/posts">
+        <label for="title">Title</label>
+        <input id="title" type="text" placeholder="Digite seu title" name="title" required /><br />
+
+        <label for="body">Body</label>
+        <input type="text" id="body" name="body" placeholder="Digite a body" required /><br />
+
+        
+        <label for="userId">userId</label>
+        <input type="text" id="userId" name="userId" placeholder="digite o id do usuário" required value="1"/>
+
+        <!-- <button type="submit">Enviar</button> -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
