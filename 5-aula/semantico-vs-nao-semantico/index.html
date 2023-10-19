@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semântico</title>
+</head>
+
+<style>
+    .article, article {
+        background-color: rgba(0, 0, 0, .6);
+        color: #ffffff;
+    }
+</style>
+<body>
+
+    <!-- Pontos positivos -->
+    <!-- Um código mais legível -->
+    <!-- Acessibilidade, (Leitores tela) -->
+    <!-- Melhor para os motores de busca (SEO) -->
+    <!-- crawler -->
+
+    <!-- HTML não semântico -->
+    <div class="main">
+        <h1>Meu titulo legal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et porro earum vero recusandae error repellendus tenetur ut, vel asperiores sequi itaque laboriosam cupiditate suscipit. Ipsa velit placeat provident dolorem rem.</p>
+
+        <div class="article">
+            <div class="section">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi iste facere reprehenderit ipsam doloremque provident omnis, quod ut possimus vero mollitia. Ipsam saepe unde vitae esse nisi sed nulla!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi iste facere reprehenderit ipsam doloremque provident omnis, quod ut possimus vero mollitia. Ipsam saepe unde vitae esse nisi sed nulla!</p>
+            </div>
+
+            <div class="section">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi iste facere reprehenderit ipsam doloremque provident omnis, quod ut possimus vero mollitia. Ipsam saepe unde vitae esse nisi sed nulla!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi iste facere reprehenderit ipsam doloremque provident omnis, quod ut possimus vero mollitia. Ipsam saepe unde vitae esse nisi sed nulla!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML semântico -->
+    <main>
+        <h1>Meu titulo legal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et porro earum vero recusandae error repellendus tenetur ut, vel asperiores sequi itaque laboriosam cupiditate suscipit. Ipsa velit placeat provident dolorem rem.</p>
+
+        <article>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi iste facere reprehenderit ipsam doloremque provident omnis, quod ut possimus vero mollitia. Ipsam saepe unde vitae esse nisi sed nulla!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi iste facere reprehenderit ipsam doloremque provident omnis, quod ut possimus vero mollitia. Ipsam saepe unde vitae esse nisi sed nulla!</p>
+            </section>
+
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi iste facere reprehenderit ipsam doloremque provident omnis, quod ut possimus vero mollitia. Ipsam saepe unde vitae esse nisi sed nulla!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi iste facere reprehenderit ipsam doloremque provident omnis, quod ut possimus vero mollitia. Ipsam saepe unde vitae esse nisi sed nulla!</p>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
