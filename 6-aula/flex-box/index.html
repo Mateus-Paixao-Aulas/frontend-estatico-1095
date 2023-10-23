@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+
+<style>
+    div div {
+        /* display: block; */
+        width: 200px;
+        height: 100px;
+        background: tomato;
+        border: 2px solid blue;
+        /* border-width: 2; */
+
+        /* padding: 10px 5px 15px 50px; */
+        /* padding-top: 10px;
+        padding-right: 5px;
+        padding-bottom: 15px;
+        padding-left: 50px; */
+    }
+
+    /* a {
+        display: block;
+        display: inline;
+        display: inline-block;
+    } */
+
+    /* span, a, img... elementos inline */
+    /* div, p, h1... elementos block */
+
+    .container {
+        display: flex;
+    }
+
+    .container div {
+        flex: 1;
+        flex-basis: 200px;
+        flex-shrink: 1;
+        flex-grow: auto;
+    }
+
+</style>
+<body>
+
+    <!-- <a href="">Sou inline</a> 
+    <a href="">Sou inline também</a> -->
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
