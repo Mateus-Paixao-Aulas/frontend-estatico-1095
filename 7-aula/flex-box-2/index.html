@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        gap: 5px;
+        /* max-width: 300px; */
+        background-color: #ccc;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        /* background-image: url('287.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; */
+    }
+
+    .container div {
+        /* width: 200px; */
+        height: 100px;
+        flex-basis: 100px;
+        color: white;
+
+        background: tomato;
+        border: 2px solid blue;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container div:nth-child(2){
+        /* Propriedade Flex Item */
+        /* flex: 1; */
+        /*
+        flex-basis: 200px; // tamanho base (width)
+        flex-shrink: 1; // capacidade encolher
+        flex-grow: auto; // capacidade crescer
+        */
+
+        /* flex-basis: 100px; */
+        /* flex-shrink: 1; */
+        /* flex-grow: 3; */
+
+        order: -1;
+    }
+
+</style>
+<body>
+
+    <!-- <a href="">Sou inline</a> 
+    <a href="">Sou inline também</a> -->
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
