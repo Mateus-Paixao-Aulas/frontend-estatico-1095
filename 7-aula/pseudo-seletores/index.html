@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container div {
+        width: 50px;
+        height: 50px;
+        background-color: tomato;
+    }
+
+    /* pseudo classes */
+    /* pseudo elemento */
+    /* pseudo seletores */
+
+    .container div:nth-child(3):hover,
+    .container div:hover {
+        background-color: blueviolet;
+    }
+    
+    .container div:last-child,
+    .container div:first-child {
+        background-color: blueviolet;
+    }
+
+    .container div:nth-child(3) {
+        background-color: red;
+    }
+
+    /* .container p + p  {
+        background: #000;
+        color: #fff;
+    } */
+
+    .container :nth-child(n + 5){
+        background: #000;
+        color: #fff;
+    }
+
+    .container-2 p::first-line {
+        color: red;
+    }
+
+    .container-2 p:nth-child(odd){
+        background-color: #ccc;
+    }
+
+    .container-2 p:empty{
+        height: 40px;
+        background-color: blue;
+    }
+
+    form input:focus {
+        outline: 2px solid #c00;
+        border: none;
+        border-radius: 5px;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+
+        <p>lorem ipsum</p>
+        <p>lorem ipsum</p>
+        <p>lorem ipsum</p>
+        <p>lorem ipsum</p>
+    </div>
+
+    <div class="container-2">
+        <p>Lorem ipsum, dolor sit <br />amet consectetur adipisicing elit. Facilis nihil in maiores! Nemo in quibusdam sequi tenetur aut a! Tenetur id dicta tempora iste fugiat officia modi vitae magni repellat!</p>
+        <p>lorem ipsum <br/> mete sit...</p>
+        <p>lorem ipsum</p>
+        <p></p>
+        <p>lorem ipsum</p>
+        <p>lorem ipsum</p>
+        <p></p>
+    </div>
+
+    <form action="">
+        <input type="text" placeholder="Digite o seu nome"/>
+    </form>
+</body>
+</html>

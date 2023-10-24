@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<style>
+    .container {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .container li {
+        border: 2px solid chocolate;
+        margin-bottom: 5px;
+        padding: 5px;
+        /* margin-left: 10px; */
+        /* padding: 50px; */
+    }
+
+    .container-2 > p {
+        background-color: yellow;
+    }
+
+    .container-3 > ul {
+        border: 2px solid #c00;
+    }
+
+    .container-4 div {
+        margin-bottom: 5px;
+        border: 2px dashed #000;
+        background-color: red;
+    }
+
+    .container-4 > div {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+    }
+
+</style>
+<body>
+    <ul class="container">
+        <li>1</li>
+        <li>2</li>
+        <li>3
+            <ul class="container">
+                <li>3.1</li>
+                <li>3.2</li>
+                <li>3.3</li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="container-2">
+        <h2>Lorem ipsum dolor sit</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, nulla facilis molestiae quaerat, sapiente soluta neque maiores id odio nisi vel nemo consectetur impedit quas ab odit inventore perferendis voluptates!</p>
+    </div>
+
+    <div class="container-2">
+        <span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati harum porro exercitationem aspernatur culpa facilis explicabo commodi asperiores minima earum hic illo maxime placeat praesentium quia inventore animi, pariatur incidunt?</p>
+        </span>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut delectus modi, error mollitia odio cumque, id optio, harum nam ab laudantium non illo ea debitis quae velit fugit eaque eligendi.</p>
+
+    <div class="container-3">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+        <div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+
+        <div class="child">
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </div>
+    
+</body>
+</html>

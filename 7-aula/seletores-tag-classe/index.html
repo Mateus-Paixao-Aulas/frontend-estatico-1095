@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+
+<style>
+    div div {
+        /* display: block; */
+        width: 200px;
+        height: 100px;
+        background: tomato;
+        border: 2px solid blue;
+        /* border-width: 2; */
+
+        /* padding: 10px 5px 15px 50px; */
+        /* padding-top: 10px;
+        padding-right: 5px;
+        padding-bottom: 15px;
+        padding-left: 50px; */
+    }
+
+    /* a {
+        display: block;
+        display: inline;
+        display: inline-block;
+    } */
+
+    /* span, a, img... elementos inline */
+    /* div, p, h1... elementos block */
+
+    .container {
+        display: flex;
+    }
+
+    .container div {
+        flex: 1;
+        flex-basis: 200px;
+        flex-shrink: 1;
+        flex-grow: auto;
+    }
+
+    /* 
+        seletor tag
+        seletor classe
+        seletor id
+    */
+
+    #child2 {
+        background-color: aqua;
+    }
+
+    .item {
+        background-color: brown;
+    }
+
+    /* mesmo elemento (tag) */
+    /* class="item green" */
+    .item.green { 
+        background-color: green;
+    } 
+
+    /* elemento filho (tag) */
+
+    /* class="item" (elemento 1 / pai)
+        class="green" (elemento 2 / filho)
+    */
+    .item .green {
+        color: white;
+    }
+
+    .green {
+        color: green;
+    }
+
+    /* Variações */
+
+    .button {
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        border-radius: 10px;
+    }
+
+    form .button {
+        background: transparent;
+        border: 2px solid violet;
+        color: purple;
+        border-radius: 0px;
+    }
+
+    form .button.link {
+        border: none;
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+
+    <!-- <a href="">Sou inline</a> 
+    <a href="">Sou inline também</a> -->
+    <!-- <div class="container">
+        <div class="item">1</div>
+        <div class="item" id="child2">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item green">5</div>
+        <div class="item green">6</div>
+    </div>
+
+    <div>
+        <p class="green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ad perferendis distinctio consequatur sed deleniti eos, fuga unde labore, amet iure laudantium, repellendus architecto quasi autem! Ullam eius maxime quidem.</p>
+    </div>
+
+    <div class="item">
+        <p class="green">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, quas! Sequi, sed consequatur? Obcaecati quae a assumenda aliquam aperiam blanditiis, animi nostrum consequatur sed tempore omnis eligendi sint delectus cupiditate?</p>
+    </div> -->
+
+    <form action="">
+        <button class="button">Entrar</button>
+        <button class="button link">Registrar</button>
+        <button class="button">Botão 2</button>
+        <button class="button">Botão 3</button>
+        <button class="link">Botão 4</button>
+    </form>
+
+    <button class="button">Botão 5</button>
+
+    <form action="">
+        <button class="">
+            <span class="button link">Botão 6</span>
+        </button>
+    </form>
+</body>
+</html>
