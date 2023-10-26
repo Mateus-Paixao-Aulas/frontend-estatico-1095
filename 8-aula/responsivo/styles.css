@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 10px;
+}
+
+header, nav, aside, main, footer {
+    padding: 20px 40px;
+    background: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+header {
+    background-color: #f7788f;
+}
+
+nav {
+    background-color: #48e1a8;
+    position: relative;
+}
+
+nav span {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: tomato;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+aside {
+    background-color: #facfd6;
+    /* margin-right: 5px; */
+    /* flex-basis: 300px; */
+    flex-grow: 1;
+}
+
+main {
+    background-color: #c9edff;
+    /* width: 100%; */
+    flex-basis: calc(100% - 300px);
+    height: 300px;
+}
+
+footer {
+    background-color: #b980ff;
+}
+
+.content {
+    display: flex;
+    gap: 10px;
+}
+
+/* RESPONSIVO */
+
+/* Media Types */
+/* 
+    all - todos dispositivos
+    print - dispositivo de impressão
+    screen - dispositivo de telas
+    speech - leitores de telas
+*/
+
+
+@media all and (max-width: 500px){
+    .content {
+        flex-direction: column;
+    }
+
+    main {
+        order: -1;
+    }
+
+    aside {
+        margin-top: 0px;
+    }
+}
+
+@media all and (max-width: 400px){
+    footer {
+        display: none;
+    }
+}
+
+@media print {
+    aside {
+        display: none;
+    }
+}
